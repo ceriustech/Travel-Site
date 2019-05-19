@@ -13,3 +13,4 @@ var myPhotoLocation = 'https://images.unsplash.com/photo-1437719417032-8595fd9e9
 https.get(myPhotoLocation, function(response){
     response.pipe(fs.createWriteStream(__dirname + "/beach-pic-1.jpg"));
 });
+
